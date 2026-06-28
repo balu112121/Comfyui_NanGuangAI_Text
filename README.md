@@ -1,2 +1,62 @@
-# Comfyui_NanGuangAI_Text
-Comfyui_NanGuangAI_Text  多类型文本输入提示词，覆盖功能正负面提示词文生图、图生图文本编辑图像提示词！
+# 南光AI提示词节点集
+
+三个带占位符水印的多行文本输入节点，用于正向/负向/通用提示词输入。
+
+## 节点列表
+- **南光AI提示词-编辑文本**：占位符“南光AIGC温馨提示：请输入图像编辑提示词”
+- **南光AI提示词-正向提示词文本**：占位符“南光AIGC温馨提示：请输入正向提示词”
+- **南光AI提示词-负向提示词文本**：占位符“南光AIGC温馨提示：请输入负向提示词”
+
+## 安装
+1. 将 `Comfyui_NanGuangAI_Text` 文件夹放入 `ComfyUI/custom_nodes/`。
+2. 重启 ComfyUI，并**强制刷新浏览器**（Ctrl+Shift+R 或清除缓存）。
+
+## 使用
+- 在节点菜单“南光AI/文本”下拖出节点。
+- 文本框显示灰色占位文字，点击后消失，输入内容为黑色。
+- 输出端口：“提示词文本”（用户输入）和“帮助信息”（固定指引）。
+
+## 工作流示例
+```
+[正向提示词节点] → (提示词文本) → [CLIP Text Encode (正)]
+[负向提示词节点] → (提示词文本) → [CLIP Text Encode (负)]
+```
+
+## 反馈
+商业定制请联系 VX：nankodesign2001（注明来源）
+
+### 南光AIGC绘画
+
+南光AIGC-AIGC全能方案设计解决专家 VX:nankodesign2001
+
+RH新人注册---
+粉丝福利：https://pre.runninghub.cn/?inviteCode=t7ztfeiw-填入邀请码，领1000RH币，每天登录还有100币 邀请码：t7ztfeiw
+
+仙宫云新人注册---
+https://www.xiangongyun.com/register/MJAT43 新人注册仙宫云送5元代金券， 填写邀请码（输入我们的邀请码：MJAT43 ）还额外送3元代金券 完成后可以得到仙宫云8元账户余额，可以免费带你玩转5小时发高配4090 D显卡AIGC绘画。
+
+DESIGN-AI新人注册---
+DESIGN-AI神器-AI时代的设计生产力工具   https://d.design/?sharecode=_EhTWOtyEe；注册可获得现金奖励！
+
+### 三大自媒体平台
+
+小红书
+https://www.xiaohongshu.com/user/profile/5fe63b41000000000100811d?m_source=itab
+
+抖音
+https://www.douyin.com/user/self?showTab=post
+
+bilibili（B站）
+https://space.bilibili.com/404783526
+
+
+### 如果您受益于本项目，不妨请作者喝杯咖啡，您的支持是我最大的动力
+
+<div style="display: flex; justify-content: left; gap: 20px;">
+    <img src="https://github.com/balu112121/ComfyUI_NanKo_AI_Recognize/blob/main/Alipay.jpg" width="300" alt="支付宝收款码">
+    <img src="https://github.com/balu112121/ComfyUI_NanKo_AI_Recognize/blob/main/WeChat.jpg" width="300" alt="微信收款码">
+</div>
+
+# 商务合作
+如果您有定制工作流/节点的需求，或者想要学习插件制作的相关课程，请联系我
+wechat:nankodesign2001
