@@ -1,0 +1,2 @@
+# Comfyui_NanGuangAI_Text
+Comfyui_NanGuangAI_Text  多类型文本输入提示词，覆盖功能正负面提示词文生图、图生图文本编辑图像提示词！
